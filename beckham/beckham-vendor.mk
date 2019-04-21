@@ -34,14 +34,20 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/etc/zaf/zaf_imx386_mono.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_imx386_mono.json \
     vendor/motorola/beckham/proprietary/vendor/etc/zaf/zaf_mot_s5k2l7sa.json:$(TARGET_COPY_OUT_VENDOR)/etc/zaf/zaf_mot_s5k2l7sa.json \
     vendor/motorola/beckham/proprietary/lib/libmodmanager_system.so:system/lib/libmodmanager_system.so \
+    vendor/motorola/beckham/proprietary/lib/motorola.hardware.mods_camera.provider@2.4.so:system/lib/motorola.hardware.mods_camera.provider@2.4.so \
+    vendor/motorola/beckham/proprietary/lib/motorola.hardware.vibrator@1.0.so:system/lib/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/beckham/proprietary/lib64/libmodhw.so:system/lib64/libmodhw.so \
     vendor/motorola/beckham/proprietary/lib64/libmodmanager_system.so:system/lib64/libmodmanager_system.so \
     vendor/motorola/beckham/proprietary/lib64/libvibratorhw.so:system/lib64/libvibratorhw.so \
+    vendor/motorola/beckham/proprietary/lib64/motorola.hardware.health@1.0.so:system/lib64/motorola.hardware.health@1.0.so \
+    vendor/motorola/beckham/proprietary/lib64/motorola.hardware.mods_camera.provider@2.4.so:system/lib64/motorola.hardware.mods_camera.provider@2.4.so \
+    vendor/motorola/beckham/proprietary/lib64/motorola.hardware.vibrator@1.0.so:system/lib64/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/motorola.hardware.health@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.health@1.0-service \
     vendor/motorola/beckham/proprietary/vendor/bin/hw/motorola.hardware.mods_camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.mods_camera.provider@2.4-service \
+    vendor/motorola/beckham/proprietary/vendor/bin/hw/motorola.hardware.vibrator@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.vibrator@1.0-service \
     vendor/motorola/beckham/proprietary/vendor/bin/mods_camd:$(TARGET_COPY_OUT_VENDOR)/bin/mods_camd \
     vendor/motorola/beckham/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/motorola/beckham/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
@@ -53,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/init/motorola.hardware.health@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health@1.0-service.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.mods_camera.provider@2.4-service.rc \
+    vendor/motorola/beckham/proprietary/vendor/etc/init/motorola.hardware.vibrator@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.vibrator@1.0-service.rc \
     vendor/motorola/beckham/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml \
     vendor/motorola/beckham/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml \
     vendor/motorola/beckham/proprietary/vendor/etc/thermal-engine-beckham.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -75,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib/hw/libcamera_mods_legacy_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libcamera_mods_legacy_hal.so \
     vendor/motorola/beckham/proprietary/vendor/lib/hw/libSonyDefocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSonyDefocus.so \
     vendor/motorola/beckham/proprietary/vendor/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
+    vendor/motorola/beckham/proprietary/vendor/lib/hw/motorola.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.vibrator@1.0-impl.so \
     vendor/motorola/beckham/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/motorola/beckham/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
     vendor/motorola/beckham/proprietary/vendor/lib/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper.so \
@@ -432,11 +440,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib/libzaf_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libzaf_core.so \
     vendor/motorola/beckham/proprietary/vendor/lib/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.health@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib/motorola.hardware.mods_camera.provider@2.4_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.mods_camera.provider@2.4_vendor.so \
+    vendor/motorola/beckham/proprietary/vendor/lib/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.iio.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.sdm660.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/hw/motorola.hardware.mods_camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.mods_camera.provider@2.4-impl.so \
+    vendor/motorola/beckham/proprietary/vendor/lib64/hw/motorola.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.vibrator@1.0-impl.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper.so \
@@ -480,6 +490,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.mods_camera.provider@2.4_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.mods_camera.provider@2.4_vendor.so \
+    vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.vibrator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.vibrator@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/sensors.iio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.iio.so
 
 PRODUCT_PACKAGES += \
