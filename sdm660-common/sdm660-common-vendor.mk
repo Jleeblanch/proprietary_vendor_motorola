@@ -49,6 +49,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/motorola/sdm660-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/motorola/sdm660-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
+    vendor/motorola/sdm660-common/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
+    vendor/motorola/sdm660-common/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/motorola/sdm660-common/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/motorola/sdm660-common/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/motorola/sdm660-common/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
@@ -609,8 +611,11 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     CNEService \
+    DMService \
     ims \
     qcrilmsgtunnel \
     QtiTelephonyService \
+    SprintDM \
     TimeService \
+    VzwDM \
     datastatusnotification
