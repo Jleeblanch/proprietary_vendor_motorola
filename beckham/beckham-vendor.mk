@@ -479,6 +479,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/beckham/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/motorola/beckham/proprietary/vendor/lib64/libvibratorhw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibratorhw.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.health@1.0.so \
     vendor/motorola/beckham/proprietary/vendor/lib64/motorola.hardware.mods_camera.provider@2.4_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.mods_camera.provider@2.4_vendor.so \
