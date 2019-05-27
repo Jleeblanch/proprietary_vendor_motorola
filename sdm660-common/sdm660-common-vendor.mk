@@ -16,6 +16,12 @@
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/sdm660-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/permissions/privapp-permissions-com.motorola.omadm.service.xml:system/etc/permissions/privapp-permissions-com.motorola.omadm.service.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/permissions/privapp-permissions-com.motorola.omadm.sprint.xml:system/etc/permissions/privapp-permissions-com.motorola.omadm.sprint.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/permissions/privapp-permissions-com.motorola.omadm.vzw.xml:system/etc/permissions/privapp-permissions-com.motorola.omadm.vzw.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/permissions/privapp-permissions-com.motorola.vzw.pco.extensions.pcoreceiver.xml:system/etc/permissions/privapp-permissions-com.motorola.vzw.pco.extensions.pcoreceiver.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/sysconfig/whitelist_com.motorola.omadm.service.xml:system/etc/sysconfig/whitelist_com.motorola.omadm.service.xml \
+    vendor/motorola/sdm660-common/proprietary/etc/sysconfig/whitelist_com.motorola.omadm.vzw.xml:system/etc/sysconfig/whitelist_com.motorola.omadm.vzw.xml \
     vendor/motorola/sdm660-common/proprietary/vendor/etc/permissions/com.motorola.moto.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.moto.xml \
     vendor/motorola/sdm660-common/proprietary/vendor/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motodisplay.xml \
     vendor/motorola/sdm660-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -610,7 +616,9 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
+    ConnMOStub \
     CNEService \
+    DCMOStub \
     DMService \
     ims \
     qcrilmsgtunnel \
@@ -618,4 +626,5 @@ PRODUCT_PACKAGES += \
     SprintDM \
     TimeService \
     VzwDM \
+    vzwPcoExt \
     datastatusnotification
