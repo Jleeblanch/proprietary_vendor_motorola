@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter nairo racer smith,$(TARGET_DEVICE)),)
+ifneq ($(filter kiev nairo racer smith,$(TARGET_DEVICE)),)
 
 endif
