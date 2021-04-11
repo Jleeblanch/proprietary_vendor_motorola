@@ -18,7 +18,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/kiev
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/kiev/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/motorola/kiev/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
+    vendor/motorola/kiev/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/motorola/kiev/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/kiev/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone \
     vendor/motorola/kiev/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
@@ -42,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc \
     vendor/motorola/kiev/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc \
     vendor/motorola/kiev/proprietary/vendor/etc/init/init.ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ets.rc \
+    vendor/motorola/kiev/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/motorola/kiev/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_video_csot_ft8756_666_1080p.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_video_csot_ft8756_666_1080p.xml \
     vendor/motorola/kiev/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_video_tm_ft8756_666_1080p.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_video_tm_ft8756_666_1080p.xml \
     vendor/motorola/kiev/proprietary/vendor/etc/sensors/config/bmp380.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380.json \
@@ -76,6 +79,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/etc/thermal-engine-kiev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-kiev.conf \
     vendor/motorola/kiev/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/kiev/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/motorola/kiev/proprietary/vendor/firmware/a619_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a619_gmu.bin \
+    vendor/motorola/kiev/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
+    vendor/motorola/kiev/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
+    vendor/motorola/kiev/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
     vendor/motorola/kiev/proprietary/vendor/firmware/aw8624_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_haptic.bin \
     vendor/motorola/kiev/proprietary/vendor/firmware/aw8624_osc_rtp_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_osc_rtp_24K_5s.bin \
     vendor/motorola/kiev/proprietary/vendor/firmware/aw8624_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8624_rtp.bin \
@@ -85,6 +92,13 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \
     vendor/motorola/kiev/proprietary/vendor/firmware/focaltech-csot-ft8756-05-0000-kiev.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-csot-ft8756-05-0000-kiev.bin \
     vendor/motorola/kiev/proprietary/vendor/firmware/focaltech-tm-ft8756-07-0000-kiev.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-tm-ft8756-07-0000-kiev.bin \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03 \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
+    vendor/motorola/kiev/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/motorola/kiev/proprietary/vendor/firmware/lagoon_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b00 \
     vendor/motorola/kiev/proprietary/vendor/firmware/lagoon_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b01 \
     vendor/motorola/kiev/proprietary/vendor/firmware/lagoon_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.b02 \
@@ -93,6 +107,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/firmware/lagoon_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.elf \
     vendor/motorola/kiev/proprietary/vendor/firmware/lagoon_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/lagoon_ipa_fws.mdt \
     vendor/motorola/kiev/proprietary/vendor/lib/hw/sound_trigger.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lito.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerapostproc.so \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
@@ -105,6 +131,39 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
     vendor/motorola/kiev/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libcvpdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcvpdsp_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdsp_streamer_binning.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
+    vendor/motorola/kiev/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov02b10_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov02b10_eeprom.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so \
@@ -201,11 +260,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/lib64/hw/com.qti.chi.override.bitra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.bitra.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/hw/sound_trigger.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lito.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libadspd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadspd.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libarcsoft_portrait_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_distortion_correction.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libarcsoft_zoomtranslator_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_zoomtranslator_imp.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
@@ -219,6 +288,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libets_fp_et5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_fp_et5.so \
@@ -226,18 +299,28 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/kiev/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libfp_ext_svc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfp_ext_svc2.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libfptcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfptcmd.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-ipc.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmot_flash_aw3643.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_flash_aw3643.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmot_lux_standardization.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_lux_standardization.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmulticam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_image_optical_zoom.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmulticam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_optical_zoom_control.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libmulticam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_video_optical_zoom.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn557_fw.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
+    vendor/motorola/kiev/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/motorola/kiev/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
